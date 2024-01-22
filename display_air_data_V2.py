@@ -4,7 +4,7 @@
 need to run script with:
         --led-cols = 64 and
         --led-brightness = 50
-
+this is the github file, setup on 23/01/2024
 '''
 
 from samplebase import SampleBase
