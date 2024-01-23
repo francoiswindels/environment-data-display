@@ -5,31 +5,18 @@
 # -----------------------------------------------------------------------------
 #                 Raspberry Pi Safe Shutdown Python Script
 # -----------------------------------------------------------------------------
+# Based on code from the Sparkfun electronics:
 # WRITTEN BY: Ho Yun "Bobby" Chan
 # @ SparkFun Electronics
 # DATE: 3/31/2020
 #
-# Based on code from the following blog and tutorials:
-#
-#    Kevin Godden
-#    https://www.ridgesolutions.ie/index.php/2013/02/22/raspberry-pi-restart-shutdown-your-pi-from-python-code/
-#
-#    Pete Lewis
-#    https://learn.sparkfun.com/tutorials/raspberry-pi-stand-alone-programmer#resources-and-going-further
-#
-#    Shawn Hymel
-# https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/experiment-1-digital-input-and-output
-#
 # ==================== DESCRIPTION ====================
-#
-# This python script takes advantage of the Qwiic pHat v2.0's
 # built-in general purpose button to safely reboot/shutdown you Pi:
 #    1.) If you press the button momentarily, the Pi will shutdown.
 #
 # ========== TUTORIAL ==========
 #  For more information on running this script on startup,
 #  check out the associated tutorial to adjust your "rc.local" file:
-#
 #  https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button
 #
 import time
@@ -43,8 +30,6 @@ GPIO.setmode(GPIO.BCM)
 # Use built-in internal pullup resistor so the pin is not floating
 # if using a momentary push button without a resistor.
 GPIO.setup(shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-# Use Qwiic pHAT's pullup resistor so that the pin is not floating
-#GPIO.setup(shutdown_pin, GPIO.IN)
 # modular function to shutdown Pi
 def shut_down():
     print("shutting down")
