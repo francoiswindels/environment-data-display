@@ -34,7 +34,9 @@ done
 https://learn.sparkfun.com/tutorials/raspberry-pi-safe-reboot-and-shutdown-button
 
 ## This is the final box
-![IMG20240122131654](https://github.com/francoiswindels/environment_data_display/assets/29170386/dd8a6d0b-ee66-4779-a521-52a916b8dba4)
+![IMG20240122131654](https://github.com/francoiswindels/environment-data-display/assets/29170386/b906cf6f-3bbf-4127-a8b8-c3e1e8b79806)
+
+
 first line is the UV index
 line 2 & 3 are NO and CO in ppm
 line 4 is PM10 in micro gram/m3
